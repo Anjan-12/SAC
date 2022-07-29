@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 110%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Activities</h1>
+
+<form style="">
+ <input type="button" value="Go back" onclick="history.back()">
+</form>
+
+<hr>
+<!-- <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div> -->
+
+<!-- Portfolio Gallery Grid -->
+<div class="container">
+  <div class="column nature">
+    <div class="content">
+      <a href="alone.html">
+      <img src="assets/img/people-jeep-safari-chitwan-national-park-nepal-sauraha-january-174570076.jpg" alt="Mountains" style="width:100%; height:205px">
+      <h4>Jeep Safari</h4>
+      </a>
+      <p>Jungled Safari is one of the fascinating safari tours by four-wheel drive jeep in the less disturbed areas of the park. It is an opportunity to view rare species, And one of the Best National Park experience. Our nature guide will accompany you for wildlife spotting. The Jeep goes deep inside the jungle via grasslands, riverside forest and Sal forest to Kasara. Deep Jungle Jeep Safari is seasonally organized. The four-hour jeep drive covers about 70 km inside the park including the crocodile-breeding center <br><br>
+
+        </p>
+      <br>
+
+    </div>
+  </div> <div class="column nature">
+    <div class="content">
+       <a href="#">
+      <img src="assets/img/tower-night-banner.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>Tower Night Stay</h4>
+      </a>
+      <p>An observation tower is basically used to view events from a long distance and to have a full 360 degree range of vision by the National Guards. The most comprehensive and impressive view of the Chitwan National Park can be seen from the deck of the Observation Tower. The tower allows you to look directly out into the dense jungle and amazing view of the wildlife. The Observation Tower is opened all year round. We offer spending a night on a tower inside the jungle. One can easily and silently get along with the wild animals and their night activities.<br>
+
+      </p>
+    </div>
+  </div>
+
+   <div class="column nature">
+    <div class="content">
+            <a href="#">
+
+      <img src="assets/img/elephant-breeding-center-800x450.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>Elephant Breeding Center</h4>
+      </a>
+      <p>Jungled Safari is one of the fascinating safari tours by four-wheel drive jeep in the less disturbed areas of the park. It is an opportunity to view rare species, And one of the Best National Park experience. Our nature guide will accompany you for wildlife spotting. The Jeep goes deep inside the jungle via grasslands, riverside forest and Sal forest to Kasara (The National Park headquarter). Deep Jungle Jeep Safari is seasonally organized. The four-hour jeep drive covers about 70 km inside the park including the crocodile-breeding center.<br>
+        <br>
+      </p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+            <a href="#">
+
+      <img src="assets/img/0351e120008u4827s8AD2.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>canoe Ride</h4>
+      </a>
+      <p>The dug out canoe trip at Rapti River allows you to see crocodiles, wetland birds, seasonally migrating birds, aquatic birds and aquatic life of the river along with its riverside beauty. The two types of crocodile – Gharial and Mugger basking on the riverbank will give some sensational thrill.<br><br><br><br><br>
+
+      </p>
+    </div>
+  </div>
+
+
+  <div class="column nature">
+    <div class="content">
+      <a href="#">
+      <img src="assets/img/89964932_2935998169794903_6972797478554828800_n.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>Tharu Cultural Show</h4>
+      </a>
+      <p>Tharu is the historical and prominent indigenous community of Chitwan and believed the aboriginal tribe of the Terai. Their traditional life style as well as unique civilization process will get us back to the primitive age. Our tour guide will help you to meet the indigenous people and to experience the traditional way of living. Ox-cart ride is one of the do it thing. Tharu folk dance performed by Tharu community is organized every evening.<br>
+
+      </p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+       <a href="#">
+      <img src="assets/img/Beeshazari_Lake_of_Chitwan,_Nepal.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>20,000 Lake</h4>
+      </a>
+      <p>One of Chitwan's best secrets, a quiet jungle full of creatures and only 200npr each. Saw a lot more here than a whole days safari in the National Park - boar, chital & sambar deer, mongoose and a rhino plus numerous birds. Do it by bicycle for a full immersion day out where you can enjoy the sights, smells & sounds - and get off the road for goodness sake!<br>
+<br><br>
+      </p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+       <a href="#">
+      <img src="assets/img/Jungle-Walk01-min-min.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>Jungle Walk</h4>
+      </a>
+      <p>Jungle walk is an interesting adventure.Your close contact with the Nature in the wild raw street is possible by our experienced field naturalist- who is expert to deal in peace manner with wild life, and brings you to back safely. This is the ideal opportunity to explore and experience. The close encounter with different kinds of deer, rhinos, wild boar, monkey, leopard, sloth bear, and the Royal Bengal Tiger will definitely be the life long memory.<br>
+
+      </p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+       <a href="#">
+      <img src="assets/img/finish725_800.jpg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>Elephant Safari</h4>
+      </a>
+      <p>Safari in wild land with giant mammals of the earth; where we can closely observe wildlife activities in the deep jungle. Sitting on a well-trained elephant allows you to view some of the World’s rarest animals such as Great One Horned Rhinos, deer, wild boar, Sloth Bears and many more wild life of the land. It offers more pleasure and security while in viewing wildlife.<br>
+<br><br>
+      </p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+       <a href="#">
+      <img src="assets/img/faF15R6Swp9xVtkVmyWM8qiouPnhGXoq1dThpZMC.jpeg" alt="Mountains" style="width:100% ;  height:205px">
+      <h4>Home Stay</h4>
+      </a>
+      <p>Safari in wild land with giant mammals of the earth; where we can closely observe wildlife activities in the deep jungle. Sitting on a well-trained elephant allows you to view some of the World’s rarest animals such as Great One Horned Rhinos, deer, wild boar, Sloth Bears and many more wild life of the land. It offers more pleasure and security while in viewing wildlife.<br>
+<br><br>
+      </p>
+    </div>
+  </div>
+</div>
+
+  <!-- <div class="column nature">
+    <div class="content">
+    <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div> -->
+<!--
+ <div class="column nature">
+    <div class="content">
+      <img src="assets/img/tower-night-banner.jpg" alt="Mountains" style="width:100%; ;  height:205px">
+      <h4>Tower Night Stay</h4>
+      <p>An observation tower is basically used to view events from a long distance and to have a full 360 degree range of vision by the National Guards. The most comprehensive and impressive view of the Chitwan National Park can be seen from the deck of the Observation Tower. The tower allows you to look directly out into the dense jungle and amazing view of the wildlife. The Observation Tower is opened all year round. We offer spending a night on a tower inside the jungle. One can easily and silently get along with the wild animals and their night activities.</p>
+    </div>
+  </div>
+
+   <div class="column nature">
+    <div class="content">
+      <img src="
+      assets/img/finish725_800.jpg" alt="Mountains" style="width:100%">
+      <h4>Elephant Safari</h4>
+      <p>Safari in wild land with giant mammals of the earth; where we can closely observe wildlife activities in the deep jungle. Sitting on a well-trained elephant allows you to view some of the World’s rarest animals such as Great One Horned Rhinos, deer, wild boar, Sloth Bears and many more wild life of the land. It offers more pleasure and security while in viewing wildlife.</p>
+    </div>
+  </div>
+ <div class="column nature">
+    <div class="content">
+      <img src="assets/img/58.jpg" alt="Mountains" style="width:100%">
+      <h4>Sunset</h4>
+      <p>Lorem ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nostrum est eosnon obcaecati consequuntur, placeat, eligendi veritatis repudiandae dolores. Deleniti hic id expedita..</p>
+    </div>
+  </div>
+   <div class="column nature">
+    <div class="content">
+      <a href="5best.html">
+      <img src="assets/img/58.jpg" alt="Mountains" style="width:100%">
+      <h4>Sunset</h4>
+      </a>
+      <p>Lorem ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nostrum est eos recusandae itaque! Voluptatum aliquid, deserunt hic nemo, debitis repellat rem nisi praesentiuati consequuntur, placeat, eligendi veritatis repudiandae dolores. Deleniti hic id expedita..</p>
+
+    </div>
+  </div>
+
+
+   <div class="column nature">
+    <div class="content">
+
+      <img src="assets/img/58.jpg" alt="Mountains" style="width:100%">
+      <h4>Sunset</h4>
+      <p>Lorem ipsum dolor. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nostrum est eos recusandae itaque! Voluptatum aliquid, deserunt hic nemo, debitis repellat rem nisi praesentium, sint odio distinctio molestias consequatur officia?Lorem ipsum dolor sit amet consectetur adipisicing xpedita..</p>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
